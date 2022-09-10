@@ -9,12 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var myButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        myButton.tintColor = .red
         // Do any additional setup after loading the view.
-        let num = 0
     }
 
-
+    @IBAction func buttonPressed(_ sender: Any) {
+        print("The button was pressed")
+    }
+    
 }
 
